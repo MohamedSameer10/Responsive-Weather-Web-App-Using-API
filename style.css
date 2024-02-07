@@ -194,7 +194,8 @@ img{
 
 @media screen and (max-width : 600px) {
     .weather-container {
-        width: 370px;
+        width: 380px;
+        height: 80px;
 
     }
 
