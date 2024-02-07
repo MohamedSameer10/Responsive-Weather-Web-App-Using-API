@@ -223,7 +223,7 @@ img{
     }
 
     .main-content .invalid{
-        width: 300px;
+        width: 350px;
         height: 230px;
         object-fit: contain;
     }
@@ -263,7 +263,7 @@ img{
     }
 
     .main-content .invalid{
-        width: 225px;
+        width: 240px;
         height: 195px;
     }
 
@@ -283,6 +283,10 @@ img{
     
     .main-content > .content{
         gap: 20px;
+    }
+
+    .err-height{
+        height: 400px;
     }
 
     
