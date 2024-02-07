@@ -225,6 +225,7 @@ img{
     .main-content .invalid{
         width: 270px;
         height: 200px;
+        object-fit: contain;
     }
 
 
@@ -241,9 +242,6 @@ img{
         font-size: 1.6rem;
     }
 
-    .err-height{
-        height: 390px;
-    }
 
     .res-container{
         height: 510px;
@@ -266,7 +264,6 @@ img{
 
     .main-content .invalid{
         width: 225px;
-        object-fit: contain;
         height: 195px;
     }
 
