@@ -44,6 +44,8 @@ async function weatherCall() {
                     <span class="enter error">Oops! Invalid Location :/</span>
                 `
             weatherContainer.classList.add('err-height')
+            weatherContainer.classList.remove('no-value-height')
+            weatherContainer.classList.remove('res-container')
         }
 
 
@@ -58,6 +60,9 @@ async function weatherCall() {
                     <img src="./assets/${climatePrediction.toLowerCase()}.png" class="enter"/>
                 `
                     weatherContainer.classList.add('res-container')
+                    weatherContainer.classList.remove('err-height')
+                    weatherContainer.classList.remove('no-value-height')
+
                 }
             })
 
@@ -85,5 +90,7 @@ function inputNotHaveValue() {
         <span class="enter error">Please Enter the City Name <br> To Find Your Location Weather.</span>
     `
     weatherContainer.classList.add('no-value-height')
+    weatherContainer.classList.remove('res-container')
+    weatherContainer.classList.remove('err-height')
 }
 

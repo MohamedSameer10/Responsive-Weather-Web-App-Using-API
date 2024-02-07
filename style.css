@@ -34,17 +34,16 @@ img{
 }
 
 .no-value-height{
-    height: 170px;
+    height: 220px;
 }
 
 .err-height{
-    height: 470px;
+    height: 500px;
 }
 
 .res-container{
     height: 630px;
 }
-
 
 .weather-container .search-section {
     display: flex;
@@ -109,7 +108,7 @@ img{
     color: red;
     font-weight: 700;
     font-size: 1.3rem;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     text-align: center;
 }
 
@@ -216,11 +215,16 @@ img{
 
     .weather-container .search-section .search-btn i{
         font-size: 1.8rem;
-        padding: 0.6rem 1rem 0 0;
+        margin: 0rem 0.5rem 0 0;
     }
 
     .weather-container .search-section > i{
         padding: 0.6rem 0.5rem 0 0.8rem;
+    }
+
+    .main-content .invalid{
+        width: 270px;
+        height: 200px;
     }
 
 
@@ -237,8 +241,12 @@ img{
         font-size: 1.6rem;
     }
 
+    .err-height{
+        height: 390px;
+    }
+
     .res-container{
-        height: 480px;
+        height: 510px;
     }
 
     .main-content .common .text{
@@ -254,6 +262,12 @@ img{
     .main-content img{
         width: 150px;
         height: 150px;
+    }
+
+    .main-content .invalid{
+        width: 225px;
+        object-fit: contain;
+        height: 195px;
     }
 
     .main-content .temperature .temp {
