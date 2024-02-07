@@ -42,7 +42,7 @@ img{
 }
 
 .res-container{
-    height: 630px;
+    height: 550px;
 }
 
 .weather-container .search-section {
@@ -121,10 +121,14 @@ img{
 
 
 .main-content img {
+    width: 250px;
+    height: 250px;
+}
+
+.main-content .invalid{
     width: 300px;
     height: 300px;
 }
-
 
 .main-content .enter {
     scale: 0;
@@ -150,13 +154,12 @@ img{
     text-transform: capitalize;
     font-size: 1.8rem;
     color: #031825;
-    margin-top: 1.4rem;
 }
 
 .main-content > .content{
-    justify-content: space-between;
-    height: 85%;
+    height: 100%;
     gap: 50px;
+    margin-top: -1rem;
 }
 
 .main-content .climate {
@@ -244,7 +247,7 @@ img{
 
 
     .res-container{
-        height: 510px;
+        height: 480px;
     }
 
     .main-content .common .text{
