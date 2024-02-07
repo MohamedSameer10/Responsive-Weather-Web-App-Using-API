@@ -196,13 +196,25 @@ img{
     .weather-container {
         width: 380px;
         height: 80px;
+    }
 
+    .res-container{
+        height: 480px;
+    }
+
+    .err-height{
+        height: 450px;
+    }
+
+    .no-value-height{
+        height: 220px;
     }
 
     .main-content .comment{
         font-size: 1.5rem;
         margin-top: 0.5rem;
     }
+    
     .weather-container .search-section i,
     .weather-container .search-section input {
         font-size: 1.5rem;
@@ -211,10 +223,6 @@ img{
 
     .weather-container .search-section input{
         width: 60%;
-    }
-
-    .err-height{
-        height: 450px;
     }
 
     .weather-container .search-section .search-btn i{
@@ -244,11 +252,6 @@ img{
 
     .main-content .common i{
         font-size: 1.6rem;
-    }
-
-
-    .res-container{
-        height: 480px;
     }
 
     .main-content .common .text{
