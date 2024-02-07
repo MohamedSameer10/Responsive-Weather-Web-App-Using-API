@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #031825;
+    background-color: #004a77;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -32,6 +32,19 @@ img{
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.249),
     0px -10px 15px rgba(0, 0, 0, 0.271);
 }
+
+.no-value-height{
+    height: 170px;
+}
+
+.err-height{
+    height: 470px;
+}
+
+.res-container{
+    height: 630px;
+}
+
 
 .weather-container .search-section {
     display: flex;
@@ -177,34 +190,93 @@ img{
     }
 }
 
-@media screen and (max-width : 460px) {
+@media screen and (max-width : 600px) {
     .weather-container {
-        width: 70%;
-        padding: 0;
-        height: 40px;
+        width: 350px;
+
     }
 
+    body{
+        background: #015e97;
+    }
+
+    .main-content .comment{
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
     .weather-container .search-section i,
     .weather-container .search-section input {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem 0 0.5rem;
+    }
+
+    .weather-container .search-section input{
+        width: 60%;
+    }
+
+    .err-height{
+        height: 400px;
+    }
+
+    .weather-container .search-section .search-btn i{
+        font-size: 1.8rem;
+        padding: 0.6rem 1rem 0 0;
+    }
+
+    .weather-container .search-section > i{
+        padding: 0.6rem 0.5rem 0 0.8rem;
     }
 
 
     .main-content img{
-        width: 240px;
-        height: 240px;
+        width: 170px;
+        height: 170px;
     }
 
     .main-content .climate{
-        flex-direction: column;
         gap: 30px;
     }
 
     .main-content .common i{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .res-container{
+        height: 480px;
     }
 
     .main-content .common .text{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
+}
+
+@media screen and (max-width : 360px) {
+    .weather-container{
+        width: 260px;
+    }
+
+    .main-content img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-content .temperature .temp {
+        font-size: 2.5rem;
+    }
+
+
+    .weather-container .climate{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .weather-container .climate .common span{
+        font-size: 1rem;
+    }      
+    
+    .main-content > .content{
+        gap: 20px;
+    }
+
+    
 }

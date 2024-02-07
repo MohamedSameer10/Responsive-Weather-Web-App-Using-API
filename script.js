@@ -43,7 +43,7 @@ async function weatherCall() {
                     <img src="./assets/404.png"/ class="enter invalid">
                     <span class="enter error">Oops! Invalid Location :/</span>
                 `
-            weatherContainer.style.height = "470px"
+            weatherContainer.classList.add('err-height')
         }
 
 
@@ -57,12 +57,11 @@ async function weatherCall() {
                     imageElement.innerHTML = `
                     <img src="./assets/${climatePrediction.toLowerCase()}.png" class="enter"/>
                 `
-                    weatherContainer.style.height = "630px"
+                    weatherContainer.classList.add('res-container')
                 }
             })
 
             weatherContent.classList.add('enter')
-            
 
             temperatureElement.innerHTML = `
                 <div class="temp enter">${Math.round(response.main.temp)}<sup>°C</sup></div>
@@ -85,6 +84,6 @@ function inputNotHaveValue() {
     err.innerHTML = `
         <span class="enter error">Please Enter the City Name <br> To Find Your Location Weather.</span>
     `
-    weatherContainer.style.height = "170px"
+    weatherContainer.classList.add('no-value-height')
 }
 
